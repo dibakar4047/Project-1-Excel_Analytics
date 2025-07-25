@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Welcome | ExcelAnalyser</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #fff;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .btn {
+      padding: 0.6rem 1.5rem;
+      margin: 0 0.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      background: #ffffff;
+      color: #333;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background: #e6e6e6;
+    }
+
+    .slider {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 2rem;
+      flex-wrap: wrap;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .slider img {
+      width: 30%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .slider img:hover {
+      transform: scale(1.03);
+    }
+
+    .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    footer {
+      padding: 1rem;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.1);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .slider img {
+        width: 90%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">ExcelAnalyser</div>
+    <div>
+      <a href="/login" class="btn">Login</a>
+      <a href="/register" class="btn">Register</a>
+    </div>
+  </header>
+
+  <!-- Static Image Section -->
+  <div class="slider">
+    <img src="https://chartexpo.com/blog/wp-content/uploads/2025/06/advanced-excel-charts.jpg" alt="Excel Upload" />
+    <img src="https://images.unsplash.com/photo-1554224154-22dec7ec8818?auto=format&fit=crop&w=1600&q=80" alt="Charts" />
+    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981d?auto=format&fit=crop&w=1600&q=80" alt="Visualization" />
+  </div>
+
+  <!-- Welcome Content -->
+  <div class="content">
+    <h1>Welcome to ExcelAnalyser</h1>
+    <p>
+      Upload Excel files, generate interactive charts, and manage your data effortlessly. With secure login, role-based access, and intuitive UI — ExcelAnalyser empowers your insights.
+    </p>
+  </div>
+
+  <footer>
+    &copy; <%= new Date().getFullYear() %> ExcelAnalyser | Created with ❤️
+  </footer>
+</body>
+</html>
